@@ -1,11 +1,9 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="start">开始体验</string>
-    <string name="local_music">LocalMusic</string>
+    <string name="second_page">第二页</string>
     <string name="ButtonA">ButtonA</string>
     <string name="pagea">a页面</string>
-    <string name="firework">firework</string>
-    <string name="Katy_Perry">Katy Perry</string>
 </resources>
 
 

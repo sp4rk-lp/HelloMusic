@@ -1,82 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C9F3F8"
     tools:context=".MainActivity2">
-
-    <RelativeLayout
-        android:id="@+id/local_music_bottom_layout"
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:layout_alignParentBottom="true"
-        android:background="#D6F7FB">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="1.5dp"
-            android:background="#000000" />
-
-        <ImageView
-            android:layout_width="90dp"
-            android:layout_height="88.5dp"
-            android:layout_alignParentBottom="true"
-            android:src="@drawable/th" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/firework"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="110dp"/>
-        <TextView
-            android:id="@+id/singer_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Katy Perry"
-            android:layout_marginTop="40dp"
-            android:layout_marginStart="110dp"/>
-        <ImageButton
-            android:id="@+id/button1"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="100dp"
-            android:layout_marginTop="10dp"
-            android:src="@android:drawable/ic_media_play"
-            android:clickable="true"
-            android:onClick="MyServer"
-            android:contentDescription="播放按钮" />
-
-        <ImageButton
-            android:id="@+id/button2"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="10dp"
-            android:src="@android:drawable/ic_media_pause"
-            android:clickable="true"
-            android:onClick="MyServer"
-            android:contentDescription="暂停按钮" />
-
-
-
-    </RelativeLayout>
-
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="#673AB7"
-        android:text="@string/local_music"
-        android:textColor="#C5DEEF"
-        android:textSize="40sp"
+        android:layout_width="83dp"
+        android:layout_height="47dp"
+        android:text="@string/second_page"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.043"
@@ -84,6 +19,27 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.022" />
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="119dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099" />
 
-
-</RelativeLayout>
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="404dp"
+        android:layout_height="86dp"
+        android:onClick="MainActivity2a"
+        android:text="@string/ButtonA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.173" />
+</androidx.constraintlayout.widget.ConstraintLayout>
